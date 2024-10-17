@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="Manar_Portfolio.xsl"?>
+<Portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="Manar_Portfolio.xsd">
+
+    <!-- Personal information -->
+    <PersonalInfo>
+        <Name>Manar Bajafar</Name>
+        <JobTitle>Software Engineer</JobTitle>
+        <Email>manar.bajafar@gmail.com</Email>
+        <LinkedIn>https://www.linkedin.com/in/manarbajafar</LinkedIn>
+        <GitHub>https://github.com/manarbajafar</GitHub>
+        <ProfilePicture>assets/profile-pic.png</ProfilePicture>
+        <CV>assets/Manar_Bajafar_CV.pdf</CV>
+        <Description>Master’s student in Computer Science at King Abdulaziz University. Skilled in developing mobile applications using Flutter, working with databases such as MySQL, Firebase, and MongoDB, and understanding the Software Development Life Cycle (SDLC). Keen to learn more and face new challenges to gain experience.</Description>
+    </PersonalInfo>
+
+    <!-- Educational background -->
+    <Education>
+        <Degree title="Bachelor of Computer Science" university="Umm Al-Qura University" years="2018-2023" honors="First-Class Honors, 3.99/4 GPA"/>
+        <Degree title="Master of Computer Science" university="King Abdulaziz University" years="2024-present"/>
+    </Education>
+
+    <!-- Internship experiences -->
+    <Internships>
+        <Internship company="First City" position="Frontend Developer Intern, Scrum Master" years="2024/07 – 2024/08" location="Makkah, Saudi Arabia"/>
+        <Internship company="SeedLab" position="Database Specialist" years="2023/07 – present" location="Remotely"/>
+        <Internship company="NERO" position="Mobile Application Developer Intern" years="2023/09 – 2023/11" location="Jeddah, Saudi Arabia"/>
+    </Internships>
+
+    <!-- Skills -->
+    <Skills>
+        <SkillCategory title="Databases">
+            <Skill>MySQL</Skill>
+            <Skill>Firebase</Skill>
+            <Skill>MongoDB</Skill>
+        </SkillCategory>
+        <SkillCategory title="Programming &amp; Development">
+            <Skill>Flutter</Skill>
+            <Skill>Python</Skill>
+            <Skill>Java</Skill>
+            <Skill>Dart</Skill>
+        </SkillCategory>
+        <SkillCategory title="Tools &amp; Platforms">
+            <Skill>Figma</Skill>
+            <Skill>Git &amp; GitHub</Skill>
+            <Skill>WordPress</Skill>
+        </SkillCategory>
+    </Skills>
+
+    <!-- Projects developed and technologies used -->
+ <Projects>
+    <Project title="Khiffa Platform" duration="2024/07 – 2024/08">
+        <Description>Delivery service platform integrated with other companies' systems.</Description>
+        <Technologies>
+            <Technology>Angular</Technology>
+            <Technology>Bootstrap</Technology>
+            <Technology>echarts</Technology>
+        </Technologies>
+        <Logo>assets/project-1.png</Logo> 
+    </Project>
+    <Project title="Nero App" duration="2023/10 – 2023/10">
+        <Description>Rebuilding the company's app with added features.</Description>
+        <Technologies>
+            <Technology>Flutter</Technology>
+            <Technology>Firebase</Technology>
+        </Technologies>
+        <Logo>assets/project-3.png</Logo> 
+    </Project>
+    <Project title="Etiqa'a" duration="2022/12 – 2023/02">
+        <Description>Graduation project for monitoring WhatsApp messages for inappropriate content.</Description>
+        <Technologies>
+            <Technology>Flutter</Technology>
+            <Technology>Flask</Technology>
+            <Technology>MySQL</Technology>
+        </Technologies>
+        <Logo>assets/project-2.png</Logo> 
+    </Project>
+</Projects>
+
+    <!-- Publications -->
+    <Publications>
+        <Publication title="Etiqa'a: An Android Mobile Application for Monitoring Teen's Private Messages on WhatsApp" journal="Engineering, Technology And Applied Science Research (ETASR)" volume="13" number="6" year="2023">
+            <Link>https://etasr.com/index.php/ETASR/article/view/6174</Link>
+        </Publication>
+    </Publications>
+
+    <!-- Volunteering initiatives -->
+    <Volunteering>
+        <Role organization="Ghali Center - Umm Al-Qura University" year="2021">Writer</Role>
+        <Initiative>(Kateb) initiative to convert school curricula into Word format for Braille printing support.</Initiative>
+    </Volunteering>
+</Portfolio>

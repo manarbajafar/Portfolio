@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Portfolio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PersonalInfo" type="PersonalInfoType"/>
+                <xs:element name="Education" type="EducationType"/>
+                <xs:element name="Internships" type="InternshipsType"/>
+                <xs:element name="Skills" type="SkillsType"/>
+                <xs:element name="Projects" type="ProjectsType"/>
+                <xs:element name="Publications" type="PublicationsType"/>
+                <xs:element name="Volunteering" type="VolunteeringType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="PersonalInfoType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="JobTitle" type="xs:string"/>
+            <xs:element name="Email" type="xs:string"/>
+            <xs:element name="LinkedIn" type="xs:string"/>
+            <xs:element name="GitHub" type="xs:string"/>
+            <xs:element name="ProfilePicture" type="xs:string"/>
+            <xs:element name="CV" type="xs:string"/>
+            <xs:element name="Description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EducationType">
+        <xs:sequence>
+            <xs:element name="Degree" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="title" type="xs:string" use="required"/>
+                    <xs:attribute name="university" type="xs:string" use="required"/>
+                    <xs:attribute name="years" type="xs:string" use="required"/>
+                    <xs:attribute name="honors" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="InternshipsType">
+        <xs:sequence>
+            <xs:element name="Internship" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="company" type="xs:string" use="required"/>
+                    <xs:attribute name="position" type="xs:string" use="required"/>
+                    <xs:attribute name="years" type="xs:string" use="required"/>
+                    <xs:attribute name="location" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SkillsType">
+        <xs:sequence>
+            <xs:element name="SkillCategory" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Skill" maxOccurs="unbounded" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="title" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ProjectsType">
+        <xs:sequence>
+            <xs:element name="Project" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Description" type="xs:string"/>
+                        <xs:element name="Technologies">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Technology" maxOccurs="unbounded" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="Logo" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="title" type="xs:string" use="required"/>
+                    <xs:attribute name="duration" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PublicationsType">
+        <xs:sequence>
+            <xs:element name="Publication" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Link" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="title" type="xs:string" use="required"/>
+                    <xs:attribute name="journal" type="xs:string" use="required"/>
+                    <xs:attribute name="volume" type="xs:string" use="required"/>
+                    <xs:attribute name="number" type="xs:string" use="optional"/>
+                    <xs:attribute name="year" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="VolunteeringType">
+        <xs:sequence>
+            <xs:element name="Role" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="organization" type="xs:string" use="required"/>
+                            <xs:attribute name="year" type="xs:string" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Initiative" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
