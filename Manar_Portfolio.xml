@@ -15,6 +15,8 @@
         <Description>Master’s student in Computer Science at King Abdulaziz University. Skilled in developing mobile applications using Flutter, working with databases such as MySQL, Firebase, and MongoDB, and understanding the Software Development Life Cycle (SDLC). Keen to learn more and face new challenges to gain experience.</Description>
     </PersonalInfo>
 
+    
+
     <!-- Educational background -->
     <Education>
         <Degree title="Bachelor of Computer Science" university="Umm Al-Qura University" years="2018-2023" honors="First-Class Honors, 3.99/4 GPA"/>
@@ -49,39 +51,40 @@
     </Skills>
 
     <!-- Projects developed and technologies used -->
- <Projects>
-    <Project title="Khiffa Platform" duration="2024/07 – 2024/08">
-        <Description>Delivery service platform integrated with other companies' systems.</Description>
-        <Technologies>
-            <Technology>Angular</Technology>
-            <Technology>Bootstrap</Technology>
-            <Technology>echarts</Technology>
-        </Technologies>
-        <Logo>assets/project-1.png</Logo> 
-    </Project>
-    <Project title="Nero App" duration="2023/10 – 2023/10">
-        <Description>Rebuilding the company's app with added features.</Description>
-        <Technologies>
-            <Technology>Flutter</Technology>
-            <Technology>Firebase</Technology>
-        </Technologies>
-        <Logo>assets/project-3.png</Logo> 
-    </Project>
-    <Project title="Etiqa'a" duration="2022/12 – 2023/02">
-        <Description>Graduation project for monitoring WhatsApp messages for inappropriate content.</Description>
-        <Technologies>
-            <Technology>Flutter</Technology>
-            <Technology>Flask</Technology>
-            <Technology>MySQL</Technology>
-        </Technologies>
-        <Logo>assets/project-2.png</Logo> 
-    </Project>
-</Projects>
+    <Projects>
+        <Project title="Khiffa Platform" duration="2024/07 – 2024/08">
+            <Description>Delivery service platform integrated with other companies' systems.</Description>
+            <Technologies>
+                <Technology>Angular</Technology>
+                <Technology>Bootstrap</Technology>
+                <Technology>echarts</Technology>
+            </Technologies>
+            <Logo>assets/project-1.png</Logo> 
+        </Project>
+        <Project title="Nero App" duration="2023/10 – 2023/10">
+            <Description>Rebuilding the company's app with added features.</Description>
+            <Technologies>
+                <Technology>Flutter</Technology>
+                <Technology>Firebase</Technology>
+            </Technologies>
+            <Logo>assets/project-3.png</Logo> 
+        </Project>
+        <Project title="Etiqa'a" duration="2022/12 – 2023/02">
+            <Description>Graduation project for monitoring WhatsApp messages for inappropriate content.</Description>
+            <Technologies>
+                <Technology>Flutter</Technology>
+                <Technology>Flask</Technology>
+                <Technology>MySQL</Technology>
+            </Technologies>
+            <Logo>assets/project-2.png</Logo> 
+        </Project>
+    </Projects>
 
     <!-- Publications -->
     <Publications>
-        <Publication title="Etiqa'a: An Android Mobile Application for Monitoring Teen's Private Messages on WhatsApp" journal="Engineering, Technology And Applied Science Research (ETASR)" volume="13" number="6" year="2023">
-            <Link>https://etasr.com/index.php/ETASR/article/view/6174</Link>
+        <Publication title="Etiqa'a: An Android Mobile Application for Monitoring Teen's Private Messages on WhatsApp" 
+        journal="Engineering, Technology And Applied Science Research (ETASR)" 
+        volume="13" number="6" year="2023">
         </Publication>
     </Publications>
 

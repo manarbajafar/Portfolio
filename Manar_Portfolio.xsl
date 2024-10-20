@@ -302,7 +302,7 @@
             <body>
                 <div class="intro-section">
                     <div class="logo">
-                        <img src="{Portfolio/PersonalInfo/ProfilePicture}" alt="Manar Bajafar Logo"/>
+                        <img src="{Portfolio/PersonalInfo/ProfilePicture}"/>
                     </div>
                     <div class="info">
                         <p>Hello, I'm</p>

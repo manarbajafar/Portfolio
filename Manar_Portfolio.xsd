@@ -7,10 +7,10 @@
                 <xs:element name="PersonalInfo" type="PersonalInfoType"/>
                 <xs:element name="Education" type="EducationType"/>
                 <xs:element name="Internships" type="InternshipsType"/>
-                <xs:element name="Skills" type="SkillsType"/>
+                <xs:element name="Skills" type="SkillsType" />
                 <xs:element name="Projects" type="ProjectsType"/>
-                <xs:element name="Publications" type="PublicationsType"/>
-                <xs:element name="Volunteering" type="VolunteeringType"/>
+                <xs:element name="Publications" type="PublicationsType" minOccurs="0"/>
+                <xs:element name="Volunteering" type="VolunteeringType" minOccurs="0" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -20,10 +20,10 @@
             <xs:element name="Name" type="xs:string"/>
             <xs:element name="JobTitle" type="xs:string"/>
             <xs:element name="Email" type="xs:string"/>
-            <xs:element name="LinkedIn" type="xs:string"/>
-            <xs:element name="GitHub" type="xs:string"/>
-            <xs:element name="ProfilePicture" type="xs:string"/>
-            <xs:element name="CV" type="xs:string"/>
+            <xs:element name="LinkedIn" type="xs:string" minOccurs="0"/>
+            <xs:element name="GitHub" type="xs:string" minOccurs="0"/>
+            <xs:element name="ProfilePicture" type="xs:string" minOccurs="0"/>
+            <xs:element name="CV" type="xs:string" minOccurs="0"/>
             <xs:element name="Description" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
@@ -93,14 +93,11 @@
         <xs:sequence>
             <xs:element name="Publication" maxOccurs="unbounded">
                 <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="Link" type="xs:string"/>
-                    </xs:sequence>
                     <xs:attribute name="title" type="xs:string" use="required"/>
                     <xs:attribute name="journal" type="xs:string" use="required"/>
-                    <xs:attribute name="volume" type="xs:string" use="required"/>
-                    <xs:attribute name="number" type="xs:string" use="optional"/>
-                    <xs:attribute name="year" type="xs:string" use="required"/>
+                    <xs:attribute name="volume" type="xs:integer" use="required"/>
+                    <xs:attribute name="number" type="xs:integer" use="optional"/>
+                    <xs:attribute name="year" type="xs:integer" use="required"/>
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
@@ -113,7 +110,7 @@
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
                             <xs:attribute name="organization" type="xs:string" use="required"/>
-                            <xs:attribute name="year" type="xs:string" use="required"/>
+                            <xs:attribute name="year" type="xs:integer" use="required"/>
                         </xs:extension>
                     </xs:simpleContent>
                 </xs:complexType>
